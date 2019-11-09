@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tomgeorge12/react-coding-challenge.git/static/css/main.4a0f0fd9.chunk.css",
+    "main.js": "/tomgeorge12/react-coding-challenge.git/static/js/main.04ebadc9.chunk.js",
+    "main.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/main.04ebadc9.chunk.js.map",
+    "runtime-main.js": "/tomgeorge12/react-coding-challenge.git/static/js/runtime-main.67753f0b.js",
+    "runtime-main.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/runtime-main.67753f0b.js.map",
+    "static/js/2.1b61d483.chunk.js": "/tomgeorge12/react-coding-challenge.git/static/js/2.1b61d483.chunk.js",
+    "static/js/2.1b61d483.chunk.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/2.1b61d483.chunk.js.map",
+    "index.html": "/tomgeorge12/react-coding-challenge.git/index.html",
+    "precache-manifest.0eb2adbedd165b4af7dc150e1b0bfb7d.js": "/tomgeorge12/react-coding-challenge.git/precache-manifest.0eb2adbedd165b4af7dc150e1b0bfb7d.js",
+    "service-worker.js": "/tomgeorge12/react-coding-challenge.git/service-worker.js",
+    "static/css/main.4a0f0fd9.chunk.css.map": "/tomgeorge12/react-coding-challenge.git/static/css/main.4a0f0fd9.chunk.css.map",
+    "static/media/logo.svg": "/tomgeorge12/react-coding-challenge.git/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67753f0b.js",
+    "static/js/2.1b61d483.chunk.js",
+    "static/css/main.4a0f0fd9.chunk.css",
+    "static/js/main.04ebadc9.chunk.js"
+  ]
+}
