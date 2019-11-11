@@ -1,7 +1,9 @@
 import React from 'react';
+import capitalize from 'lodash/capitalize';
 
 class Header extends React.Component {
     render() {
+        const {genre} = this.props;
         return(
             <div>
                 <div className='header-first-section'>
@@ -10,7 +12,7 @@ class Header extends React.Component {
                     <a className='header-link-login'>{'Log in'}</a>                    
                 </div>
                 <div className='header-second-section'>
-                    <span className='header-heading-sub'>{'Popular Titles'}</span>
+                    <span className='header-heading-sub'>{`Popular ${capitalize(genre)}`}</span>
                 </div>
             </div>
         );

@@ -88,10 +88,12 @@
   background-color: #5f5d5d;
 }
 .main-content-body{
-  display: flex;
+  display: inline;
+  width: 100%;
+  padding-right: 12%;
 }
 .main-card{
-  display: inline;
+  display: inline-grid;
   margin-right: 15px;
 }
 .main-card-body-text{
@@ -103,4 +105,31 @@
   width: 100px;
   display: inherit;
   padding-right: 10px;
+}
+.card{
+  display: inline-grid;
+    height: 199px;
+}
+.footer-copyright{
+  display: block;
+}
+.footer-store{
+  width: 80px;
+  height: 80px; 
+  padding-right: 10px;   
+}
+.footer-social{
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+.footer-store-block{
+  padding-right: 12%;
+  display: inline-block;
+  float: right;
+}
+.footer-social-block{
+  padding-top: 27px;
+  padding-right: 12%;
+  display: inline-block;
 }

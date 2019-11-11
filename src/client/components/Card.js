@@ -9,7 +9,8 @@ class Card extends React.Component {
         return(
             <div className='card'>
                 <img className='card-body' src={src}/>
-                <span>{title}</span>
+                <span>{title.length > 10 ? title.substring(0, 10) : title}</span>
+                {/* if(text.length > 50) return <div>{text.substring(0, 50)}<button type="button" className="btn btn-link">...</button></div> */}
             </div>
         );
     }

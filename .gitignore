@@ -11,6 +11,8 @@
 # production
 /build
 
+/windows
+
 # misc
 .DS_Store
 .env.local
