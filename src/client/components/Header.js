@@ -2,6 +2,13 @@ import React from 'react';
 import capitalize from 'lodash/capitalize';
 
 class Header extends React.Component {
+    constructor(props){
+        super(props);
+        this.breadCrumbsHandler=this.breadCrumbsHandler.bind(this);
+    }
+    breadCrumbsHandler(){
+        this.props.breadCrumbsHandler('Titles');
+    }
     render() {
         const {genre} = this.props;
         return(
@@ -12,7 +19,7 @@ class Header extends React.Component {
                     <a className='header-link-login'>{'Log in'}</a>                    
                 </div>
                 <div className='header-second-section'>
-                    <span className='header-heading-sub'>{`Popular ${capitalize(genre)}`}</span>
+                    <a className='header-heading-sub'  onClick={this.breadCrumbsHandler}>{`Popular ${capitalize(genre)}`}</a>
                 </div>
             </div>
         );

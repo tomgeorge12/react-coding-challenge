@@ -20,6 +20,12 @@ class MainContent extends React.Component{
         this.showPopularItems=this.showPopularItems.bind(this);
         this.toggleShowDetails=this.toggleShowDetails.bind(this);
     }
+    componentWillReceiveProps(nextProps){
+        if(nextProps.genre === 'Titles'){
+            this.setState({ showDetails:false })
+        }
+    }
+
     showPopularItems(){
         const { programType } = this.state;
         const cards = map(data.entries, (item, idx)=> {

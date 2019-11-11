@@ -45,6 +45,7 @@
   margin: 1%;
   margin-right: 2%;
   color: white;
+  cursor: pointer;
 }
 .header-first-section{
   background-color: #437ed6;
@@ -54,6 +55,7 @@
   font-size: 195%;
   margin-left: 12%;
   color: white;
+  cursor: pointer;
 }
 .header-second-section{
   background-color: #2d2c2c;
@@ -95,6 +97,7 @@
 .main-card{
   display: inline-grid;
   margin-right: 15px;
+  cursor: pointer;
 }
 .main-card-body-text{
   padding: 45px;

@@ -24,10 +24,10 @@ class Container extends React.Component {
             <div>
                 {/* <ErrorBoundary>
                     <> */}
-                    <Header genre={genre} />
+                    <Header breadCrumbsHandler={this.changeGenre} genre={genre} />
                     <Suspense fallback={<div>Loading...</div>}>
                         <div className='body-content'>
-                            <MainContent changeGenre={this.changeGenre} />
+                            <MainContent changeGenre={this.changeGenre} genre={genre} />
                         </div>
                     </Suspense>
                     <Footer />
