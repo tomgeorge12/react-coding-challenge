@@ -27,7 +27,7 @@ class MainContent extends React.Component{
         }
     }
     componentWillMount(){
-        $.getJSON('http://localhost:8080/getPopularTitles',(data)=>{
+        $.getJSON('/getPopularTitles',(data)=>{
             this.popularTitlesData = data;
         });
     }
