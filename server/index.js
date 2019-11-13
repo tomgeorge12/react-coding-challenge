@@ -24,7 +24,7 @@ if(process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, '../', 'client', 'build', 'index.html'));
   });
 }
-
+//port varies on prod
 app.listen(port,function(){
     console.log('App running successfully:', port);
 });
