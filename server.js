@@ -4,7 +4,7 @@ let fs = require('fs');
 let path = require('path');
 let bodyParser = require('body-parser');
 var sample=require('./data/sample.json');
-const auth = require('../middleware/auth');
+const auth = require('./middleware/auth');
 const port = process.env.PORT || 8080;
 
 // Bodyparser Middleware
@@ -21,7 +21,7 @@ if(process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../', 'client', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 //port varies on prod
