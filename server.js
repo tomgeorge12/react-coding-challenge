@@ -19,10 +19,15 @@ app.get('/getPopularTitles', auth, function(req,res){
 if(process.env.NODE_ENV === 'production') {
 
   app.use(express.static('client/build'));
+  console.log('Debug | inside if CP#1');
 
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    console.log('Debug | inside app.get * CP#3');
+    
   });
+  console.log('Debug | inside if CP#2');
+  
 }
 //port varies on prod
 app.listen(port,function(){
