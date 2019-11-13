@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/tomgeorge12/react-coding-challenge.git/static/css/main.4a0f0fd9.chunk.css",
-    "main.js": "/tomgeorge12/react-coding-challenge.git/static/js/main.04ebadc9.chunk.js",
-    "main.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/main.04ebadc9.chunk.js.map",
-    "runtime-main.js": "/tomgeorge12/react-coding-challenge.git/static/js/runtime-main.67753f0b.js",
-    "runtime-main.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/runtime-main.67753f0b.js.map",
-    "static/js/2.1b61d483.chunk.js": "/tomgeorge12/react-coding-challenge.git/static/js/2.1b61d483.chunk.js",
-    "static/js/2.1b61d483.chunk.js.map": "/tomgeorge12/react-coding-challenge.git/static/js/2.1b61d483.chunk.js.map",
-    "index.html": "/tomgeorge12/react-coding-challenge.git/index.html",
-    "precache-manifest.0eb2adbedd165b4af7dc150e1b0bfb7d.js": "/tomgeorge12/react-coding-challenge.git/precache-manifest.0eb2adbedd165b4af7dc150e1b0bfb7d.js",
-    "service-worker.js": "/tomgeorge12/react-coding-challenge.git/service-worker.js",
-    "static/css/main.4a0f0fd9.chunk.css.map": "/tomgeorge12/react-coding-challenge.git/static/css/main.4a0f0fd9.chunk.css.map",
-    "static/media/logo.svg": "/tomgeorge12/react-coding-challenge.git/static/media/logo.25bf045c.svg"
+    "main.css": "/react-coding-challenge/static/css/main.9cc583bc.chunk.css",
+    "main.js": "/react-coding-challenge/static/js/main.a0973c4a.chunk.js",
+    "main.js.map": "/react-coding-challenge/static/js/main.a0973c4a.chunk.js.map",
+    "runtime-main.js": "/react-coding-challenge/static/js/runtime-main.fe0255be.js",
+    "runtime-main.js.map": "/react-coding-challenge/static/js/runtime-main.fe0255be.js.map",
+    "static/js/2.42e10437.chunk.js": "/react-coding-challenge/static/js/2.42e10437.chunk.js",
+    "static/js/2.42e10437.chunk.js.map": "/react-coding-challenge/static/js/2.42e10437.chunk.js.map",
+    "index.html": "/react-coding-challenge/index.html",
+    "precache-manifest.73a03634a396eac9bd9f60d70d550e0c.js": "/react-coding-challenge/precache-manifest.73a03634a396eac9bd9f60d70d550e0c.js",
+    "service-worker.js": "/react-coding-challenge/service-worker.js",
+    "static/css/main.9cc583bc.chunk.css.map": "/react-coding-challenge/static/css/main.9cc583bc.chunk.css.map",
+    "static/media/facebookwhite.svg": "/react-coding-challenge/static/media/facebookwhite.80cf88b9.svg",
+    "static/media/logo.svg": "/react-coding-challenge/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.67753f0b.js",
-    "static/js/2.1b61d483.chunk.js",
-    "static/css/main.4a0f0fd9.chunk.css",
-    "static/js/main.04ebadc9.chunk.js"
+    "static/js/runtime-main.fe0255be.js",
+    "static/js/2.42e10437.chunk.js",
+    "static/css/main.9cc583bc.chunk.css",
+    "static/js/main.a0973c4a.chunk.js"
   ]
 }
