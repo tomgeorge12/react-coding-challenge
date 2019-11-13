@@ -13,7 +13,7 @@
   "devDependencies": {
     "react-scripts": "3.2.0"
   },
-  "homepage": "https://github.com/tomgeorge12/react-coding-challenge",
+  "homepage": "https://tomgeorge12.github.io/react-coding-challenge/",
   "scripts": {
     "start": "concurrently --kill-others \"node ./src/server/index.js\" \"react-scripts start\"",
     "build": "react-scripts build",
