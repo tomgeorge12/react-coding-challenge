@@ -1,9 +1,9 @@
 import React from 'react';
 import map from 'lodash/map';
+import $ from 'jquery';
 import slice from 'lodash/slice';
 import remove from 'lodash/remove';
 import Card from './Card';
-import data from './sample.json';
 
 class MainContent extends React.Component{
     constructor(props){
@@ -12,6 +12,7 @@ class MainContent extends React.Component{
             showDetails:false,
             programType:''
         }
+        this.popularTitlesData = {};
         this.popularTitles=[
             {body:'SERIES', title:'Popular Series', programType:'series'},
             {body:'MOVIES', title:'Popular Movies', programType:'movie'}
@@ -25,10 +26,15 @@ class MainContent extends React.Component{
             this.setState({ showDetails:false })
         }
     }
+    componentWillMount(){
+        $.getJSON('/getPopularTitles',(data)=>{
+            this.popularTitlesData = data;
+        });
+    }
 
     showPopularItems(){
         const { programType } = this.state;
-        const cards = map(data.entries, (item, idx)=> {
+        const cards = map(this.popularTitlesData.entries, (item, idx)=> {
             if(item.releaseYear>2010 && item.programType===programType){
                 return(
                     <Card title={item.title} src={item.images['Poster Art'].url} />
