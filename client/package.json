@@ -15,7 +15,7 @@
   },
   "homepage": "https://tomgeorge12.github.io/react-coding-challenge/",
   "scripts": {
-    "start": "concurrently --kill-others \"node ./src/server/index.js\" \"react-scripts start\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
