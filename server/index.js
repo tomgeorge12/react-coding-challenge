@@ -4,16 +4,20 @@ let fs = require('fs');
 let path = require('path');
 let bodyParser = require('body-parser');
 var sample=require('./data/sample.json');
+const auth = require('../middleware/auth');
 const port = process.env.PORT || 8080;
 
-app.get('/getPopularTitles',function(req,res){
+// Bodyparser Middleware
+app.use(express.json());
+
+app.get('/getPopularTitles', auth, function(req,res){
   res.header('Access-Control-Allow-Origin','*');
   res.json(sample);
 });
 
 // Serve static assets if in production
 if(process.env.NODE_ENV === 'production') {
-  app.use('client/build');
+  app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
     res.sendFile(Path.resolve(__dirname, 'client', 'build', 'index.html'));
