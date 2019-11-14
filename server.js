@@ -4,13 +4,13 @@ let fs = require('fs');
 let path = require('path');
 let bodyParser = require('body-parser');
 var sample=require('./data/sample.json');
-const auth = require('./middleware/auth');
+// const auth = require('./middleware/auth');
 const port = process.env.PORT || 8080;
 
 // Bodyparser Middleware
 app.use(express.json());
 
-app.get('/getPopularTitles', auth, function(req,res){
+app.get('/getPopularTitles', function(req,res){
   res.header('Access-Control-Allow-Origin','*');
   res.json(sample);
 });
@@ -22,7 +22,7 @@ if(process.env.NODE_ENV === 'production') {
   console.log('Debug | inside if CP#1');
 
   app.get('*', (req, res) => {
-    res.render(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     console.log('Debug | inside app.get * CP#3');
     
   });
