@@ -1,6 +1,6 @@
 var express = require('express');
 var app  = express();
-let fs = require('fs');
+// let fs = require('fs');
 let path = require('path');
 let bodyParser = require('body-parser');
 var sample=require('./data/sample.json');
@@ -17,19 +17,10 @@ app.get('/getPopularTitles', function(req,res){
 
 
 if(process.env.NODE_ENV === 'production') {
-  // Serve static assets if in production
-  app.use('/static', express.static(path.join(__dirname, 'client/build')));
-  // app.use(express.static(path.join(__dirname, 'client', 'build')));
-  console.log('Debug | inside if CP#1');
-
-  app.get('*', (req, res) => {
-    // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    console.log(req.url, 'Debug | inside app.get * CP#3');
-    
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.get('*', (req, res)=>{
+      res.sendFile(path.resolve(path.join(__dirname, 'client/build/index.html')));
   });
-  console.log('Debug | inside if CP#2');
-  
 }
 //port varies on prod
 app.listen(port,function(){
