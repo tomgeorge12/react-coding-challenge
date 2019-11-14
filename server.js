@@ -15,15 +15,17 @@ app.get('/getPopularTitles', function(req,res){
   res.json(sample);
 });
 
-// Serve static assets if in production
-if(process.env.NODE_ENV === 'production') {
 
-  app.use(express.static('client/build'));
+if(process.env.NODE_ENV === 'production') {
+  // Serve static assets if in production
+  app.use('/static', express.static(path.join(__dirname, 'client/build')));
+  // app.use(express.static(path.join(__dirname, 'client', 'build')));
   console.log('Debug | inside if CP#1');
 
   app.get('*', (req, res) => {
+    // res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    console.log('Debug | inside app.get * CP#3');
+    console.log(req.url, 'Debug | inside app.get * CP#3');
     
   });
   console.log('Debug | inside if CP#2');
